@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+passwd -u git
 chown -R git:git ~git
 
 if [ ! -f ~git/.ssh/authorized_keys ]; then
