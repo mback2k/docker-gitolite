@@ -1,4 +1,4 @@
-FROM mback2k/alpine:latest
+FROM ghcr.io/mback2k/docker-alpine:latest
 
 RUN addgroup -g 9418 -S git
 RUN adduser -u 9418 -h /var/lib/git -s /bin/sh -S -D -G git git
